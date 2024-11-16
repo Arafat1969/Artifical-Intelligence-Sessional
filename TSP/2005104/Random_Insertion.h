@@ -31,7 +31,7 @@ public:
     }
 
     vector<int> findTour() override {
-        uniform_int_distribution<int> dist(0, size - 1);
+        uniform_int_distribution<int> dist(1, size);
         int startCity = dist(rng);
         tour.clear();
         tour.push_back(startCity);

@@ -18,11 +18,11 @@ public:
             int next_city = -1;
 
             for (int j = 0; j < size; ++j) {
-                if (!visited[j]) {
+                if (!visited[cities[j].id]) {
                     double dist = cities[current].distanceTo(cities[j]);
                     if (dist < min_dist) {
                         min_dist = dist;
-                        next_city = j;
+                        next_city = cities[j].id;
                     }
                 }
             }

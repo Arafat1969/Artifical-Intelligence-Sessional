@@ -2,13 +2,21 @@
 #define GREEDY_HEURISTIC_H
 
 #include "constructive_search.h"
+#include <iostream>
 #include <algorithm>
+#include <vector>
 
 class GreedyHeuristic : public ConstructiveSearch {
 public:
-    vector<pair<pair<City, City>, double>> edges;
+    vector<pair<pair<City, City>, double>> edges; 
+    vector<int> degree;
+    vector<int> parent;
 
-    GreedyHeuristic(int size, vector<City> cities) : ConstructiveSearch(size, cities) {}
+    GreedyHeuristic(int size, vector<City> cities) : ConstructiveSearch(size, cities) {
+        parent.resize(size+1);
+        //iota(parent.begin(), parent.end(), 0);
+        degree.resize(size+1,0);
+    }
 
     void createEdges() {
         edges.clear();
@@ -19,42 +27,88 @@ public:
         }
     }
 
+    
+    int find_parents(int u) {
+        if (u == parent[u]) return u;
+        return parent[u] = find_parents(parent[u]);
+    }
+
+    
+    void join_sets(int u, int v) {
+        int parent_u = find_parents(u);
+        int parent_v = find_parents(v);
+        if (parent_u != parent_v) {
+            parent[parent_v] = parent_u;
+        }
+    }
+
+
     vector<int> findTour() override {
         if (size == 0) return {};
 
+        for (int i = 1; i <= size; ++i) {
+            parent[i] = i; 
+        }
+
         createEdges();
+
         sort(edges.begin(), edges.end(), [](const auto& a, const auto& b) {
             return a.second < b.second;
         });
 
         vector<pair<int, int>> tourEdges;
-        visited[0] = true;
+        
 
         for (const auto& edge : edges) {
-            if (tourEdges.size() >= size - 1) break;
-            int city1 = edge.first.first.id;
-            int city2 = edge.first.second.id;
-            if (!visited[city1] || !visited[city2]) {
-                visited[city1] = visited[city2] = true;
-                tourEdges.push_back({city1, city2});
+            int u = edge.first.first.id;
+            int v = edge.first.second.id;
+
+            if(degree[u] < 2 && degree[v] < 2 && find_parents(u) != find_parents(v)) {
+                tourEdges.push_back({u, v});
+                degree[u]++;
+                degree[v]++;
+                join_sets(u, v);
+            }
+            
+            if (tourEdges.size() == size-1) break;
+        }
+
+        
+        // if (tourEdges.size() != size) {
+        //     std::cerr << "Error: Could not construct a valid tour!" << std::endl;
+        //     return {};
+        // }
+
+        for(const auto& edge : edges) {
+            int u = edge.first.first.id;
+            int v = edge.first.second.id;
+            if(degree[u] < 2 && degree[v] < 2 && find_parents(u) == find_parents(v)) {
+                tourEdges.push_back({u, v});
             }
         }
 
+        
         tour.clear();
-        tour.push_back(0);
-        for (size_t i = 0; i < size - 1; ++i) {
-            for (const auto& edge : tourEdges) {
-                if (edge.first == tour.back() && find(tour.begin(), tour.end(), edge.second) == tour.end()) {
-                    tour.push_back(edge.second);
-                    break;
-                }
-                if (edge.second == tour.back() && find(tour.begin(), tour.end(), edge.first) == tour.end()) {
-                    tour.push_back(edge.first);
+        unordered_map<int, vector<int>> list;
+        for (const auto& edge : tourEdges) {
+            list[edge.first].push_back(edge.second);
+            list[edge.second].push_back(edge.first);
+        }
+
+        int currentCity = cities[0].id;
+        unordered_set<int> visitedCities;
+
+        while (tour.size() < size) {
+            tour.push_back(currentCity);
+            visitedCities.insert(currentCity);
+            for (int neighbor : list[currentCity]){
+                if (visitedCities.find(neighbor) == visitedCities.end()){
+                    currentCity = neighbor;
                     break;
                 }
             }
         }
-        tour.push_back(0);
+        tour.push_back(cities[0].id);
         return tour;
     }
 };

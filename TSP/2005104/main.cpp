@@ -22,7 +22,7 @@ vector<City> parse_tsp_data(const string &filename) {
 
     while (getline(myInput, line)) {
         if (line.find("NODE_COORD_SECTION") != string::npos) {
-            cout<<"Reading coordinates"<<endl;
+            //cout<<"Reading coordinates"<<endl;
             reading_coordinates = true;
             continue;
             
@@ -38,7 +38,7 @@ vector<City> parse_tsp_data(const string &filename) {
             double x;
             double y;
             ss >> id >> x >> y;
-            cout<<id<<" "<<x<<" "<<y<<endl;
+            //cout<<id<<" "<<x<<" "<<y<<endl;
             City city(id,x,y);
             if (ss) {
                 cities.push_back(city);
@@ -56,4 +56,15 @@ int main(){
     string filename = "a280.tsp";
     vector<City> cities = parse_tsp_data(filename);
     cout<<cities.size()<<endl;
+    GreedyHeuristic random(cities.size(),cities);
+    vector<int> tour = random.findTour();
+    NodeSwap two_opt(cities.size(),cities,tour);
+    two_opt.optimizeTour();
+    tour = two_opt.getImprovedTour();
+    for(int i=0;i<tour.size();i++){
+        cout<<tour[i]<<" ";
+    }
+    cout<<endl;
+    cout<<"Tour size: "<<tour.size()<<endl;
+    cout<<endl;
 }
