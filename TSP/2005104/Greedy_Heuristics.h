@@ -12,7 +12,7 @@ public:
     vector<int> degree;
     vector<int> parent;
 
-    GreedyHeuristic(int size, vector<City> cities) : ConstructiveSearch(size, cities) {
+    GreedyHeuristic(vector<City> cities) : ConstructiveSearch(cities) {
         parent.resize(size+1);
         //iota(parent.begin(), parent.end(), 0);
         degree.resize(size+1,0);

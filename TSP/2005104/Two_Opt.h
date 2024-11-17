@@ -6,8 +6,8 @@
 
 class TwoOpt : public PerturbativeSearch {
 public:
-    TwoOpt(int size, vector<City> cities, vector<int> tour)
-        : PerturbativeSearch(size, cities, tour) {}
+    TwoOpt(vector<City> cities, vector<int> tour)
+        : PerturbativeSearch(cities, tour) {}
 
     void twoOptSwap(int i, int k) {
         reverse(improved_tour.begin() + i, improved_tour.begin() + k + 1);

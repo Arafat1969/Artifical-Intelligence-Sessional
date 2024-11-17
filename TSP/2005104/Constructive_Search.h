@@ -12,8 +12,8 @@ protected:
     vector<bool> visited;
 
 public:
-    ConstructiveSearch(int size, const vector<City>& cities)
-        : size(size), cities(cities), visited(size+1, false) {}
+    ConstructiveSearch(const vector<City>& cities)
+        : size(cities.size()), cities(cities), visited(size+1, false) {}
 
     double calculateTotalDistance() const {
         double totalDistance = 0.0;

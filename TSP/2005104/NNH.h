@@ -5,7 +5,7 @@
 
 class NNH : public ConstructiveSearch {
 public:
-    NNH(int size, vector<City> cities) : ConstructiveSearch(size, cities) {}
+    NNH(vector<City> cities) : ConstructiveSearch(cities) {}
 
     vector<int> findTour() override {
         int current = cities[0].id;

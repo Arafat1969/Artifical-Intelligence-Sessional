@@ -14,8 +14,8 @@ protected:
     vector<City> cities;
 
 public:
-    PerturbativeSearch(int size, vector<City> cities, vector<int> tour)
-        : size(size), cities(cities), given_tour(tour) {
+    PerturbativeSearch(vector<City> cities, vector<int> tour)
+        : size(cities.size()), cities(cities), given_tour(tour) {
         improved_tour = given_tour;
     }
 

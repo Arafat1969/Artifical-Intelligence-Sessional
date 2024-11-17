@@ -9,8 +9,8 @@ class RandomInsertion : public ConstructiveSearch {
     mt19937 rng;
 
 public:
-    RandomInsertion(int size, vector<City> cities, int seed = 42)
-        : ConstructiveSearch(size, cities), rng(seed) {}
+    RandomInsertion(vector<City> cities, int seed = 42)
+        : ConstructiveSearch(cities), rng(seed) {}
 
     int findBestInsertion(const vector<int>& tour, const City& city) {
         double minIncrease = __INT32_MAX__;

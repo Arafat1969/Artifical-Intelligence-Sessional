@@ -68,5 +68,6 @@
     "typeindex": "cpp",
     "typeinfo": "cpp",
     "valarray": "cpp"
-  }
+  },
+  "liveServer.settings.port": 5501
 }

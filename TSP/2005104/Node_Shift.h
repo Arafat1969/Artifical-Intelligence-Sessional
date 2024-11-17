@@ -6,8 +6,8 @@
 
 class NodeShift : public PerturbativeSearch {
 public:
-    NodeShift(int size, vector<City> cities, vector<int> tour)
-        : PerturbativeSearch(size, cities, tour) {}
+    NodeShift(vector<City> cities, vector<int> tour)
+        : PerturbativeSearch(cities, tour) {}
 
     void shiftNode(int fromIndex, int toIndex) {
         int node = improved_tour[fromIndex];

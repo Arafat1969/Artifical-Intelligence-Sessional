@@ -6,8 +6,8 @@
 
 class NodeSwap : public PerturbativeSearch {
 public:
-    NodeSwap(int size, vector<City> cities, vector<int> tour)
-        : PerturbativeSearch(size, cities, tour) {}
+    NodeSwap(vector<City> cities, vector<int> tour)
+        : PerturbativeSearch(cities, tour) {}
 
     void swapNodes(int i, int j) {
         swap(improved_tour[i], improved_tour[j]);
