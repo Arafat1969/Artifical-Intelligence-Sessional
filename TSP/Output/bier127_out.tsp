@@ -6,7 +6,7 @@ NNH + Node Swap : 184420
 Random Insertion : 136964
 Random Insertion + 2-opt : 141894
 Random Insertion + Node Shift : 141710
-Random Insertion + Node Swap : inf
+Random Insertion + Node Swap : 141110
 Greedy approach : 577255
 Greedy approach + 2-opt : 128583
 Greedy approach + Node Shift : 139926

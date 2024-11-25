@@ -9,5 +9,5 @@ Random Insertion + Node Shift : 592.58
 Random Insertion + Node Swap : 607.272
 Greedy approach : 2404.87
 Greedy approach + 2-opt : 607.657
-Greedy approach + Node Shift : inf
+Greedy approach + Node Shift : 653.567
 Greedy approach + Node Swap : 777.494
