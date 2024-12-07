@@ -1,0 +1,780 @@
+--------------------------------------------------------------------------------------------------
+----------------------------------------Test 0----------------------------------------------------
+--------------------------------------------------------------------------------------------------
+
+class	total	train	 test	%train
+unacc	 1210	  978	  232	0.808264
+  acc	  384	  310	   74	0.807292
+ good	   69	   61	    8	0.884058
+vgood	   65	   47	   18	0.723077
+
+
+Information gain --> Always select the best attribute
+-----------------------------------------------------
+Test samples  : 332
+Total matched : 304
+Accuracy      : 0.915663
+
+
+Information gain --> Select one randomly from the top three attributes
+-----------------------------------------------------
+Test samples  : 332
+Total matched : 258
+Accuracy      : 0.777108
+
+
+Gini impurity --> Always select the best attribute
+-----------------------------------------------------
+Test samples  : 332
+Total matched : 301
+Accuracy      : 0.906627
+
+
+Gini impurity --> Select one randomly from the top three attributes
+-----------------------------------------------------
+Test samples  : 332
+Total matched : 260
+Accuracy      : 0.783133
+
+
+--------------------------------------------------------------------------------------------------
+----------------------------------------Test 1----------------------------------------------------
+--------------------------------------------------------------------------------------------------
+
+class	total	train	 test	%train
+unacc	 1210	  979	  231	0.809091
+  acc	  384	  312	   72	0.8125
+ good	   69	   52	   17	0.753623
+vgood	   65	   55	   10	0.846154
+
+
+Information gain --> Always select the best attribute
+-----------------------------------------------------
+Test samples  : 330
+Total matched : 311
+Accuracy      : 0.942424
+
+
+Information gain --> Select one randomly from the top three attributes
+-----------------------------------------------------
+Test samples  : 330
+Total matched : 266
+Accuracy      : 0.806061
+
+
+Gini impurity --> Always select the best attribute
+-----------------------------------------------------
+Test samples  : 330
+Total matched : 306
+Accuracy      : 0.927273
+
+
+Gini impurity --> Select one randomly from the top three attributes
+-----------------------------------------------------
+Test samples  : 330
+Total matched : 265
+Accuracy      : 0.80303
+
+
+--------------------------------------------------------------------------------------------------
+----------------------------------------Test 2----------------------------------------------------
+--------------------------------------------------------------------------------------------------
+
+class	total	train	 test	%train
+unacc	 1210	  952	  258	0.786777
+  acc	  384	  311	   73	0.809896
+ good	   69	   59	   10	0.855072
+vgood	   65	   53	   12	0.815385
+
+
+Information gain --> Always select the best attribute
+-----------------------------------------------------
+Test samples  : 353
+Total matched : 331
+Accuracy      : 0.937677
+
+
+Information gain --> Select one randomly from the top three attributes
+-----------------------------------------------------
+Test samples  : 353
+Total matched : 288
+Accuracy      : 0.815864
+
+
+Gini impurity --> Always select the best attribute
+-----------------------------------------------------
+Test samples  : 353
+Total matched : 331
+Accuracy      : 0.937677
+
+
+Gini impurity --> Select one randomly from the top three attributes
+-----------------------------------------------------
+Test samples  : 353
+Total matched : 277
+Accuracy      : 0.784703
+
+
+--------------------------------------------------------------------------------------------------
+----------------------------------------Test 3----------------------------------------------------
+--------------------------------------------------------------------------------------------------
+
+class	total	train	 test	%train
+unacc	 1210	  944	  266	0.780165
+  acc	  384	  301	   83	0.783854
+ good	   69	   54	   15	0.782609
+vgood	   65	   46	   19	0.707692
+
+
+Information gain --> Always select the best attribute
+-----------------------------------------------------
+Test samples  : 383
+Total matched : 347
+Accuracy      : 0.906005
+
+
+Information gain --> Select one randomly from the top three attributes
+-----------------------------------------------------
+Test samples  : 383
+Total matched : 286
+Accuracy      : 0.746736
+
+
+Gini impurity --> Always select the best attribute
+-----------------------------------------------------
+Test samples  : 383
+Total matched : 348
+Accuracy      : 0.908616
+
+
+Gini impurity --> Select one randomly from the top three attributes
+-----------------------------------------------------
+Test samples  : 383
+Total matched : 299
+Accuracy      : 0.780679
+
+
+--------------------------------------------------------------------------------------------------
+----------------------------------------Test 4----------------------------------------------------
+--------------------------------------------------------------------------------------------------
+
+class	total	train	 test	%train
+unacc	 1210	  976	  234	0.806612
+  acc	  384	  299	   85	0.778646
+ good	   69	   56	   13	0.811594
+vgood	   65	   52	   13	0.8
+
+
+Information gain --> Always select the best attribute
+-----------------------------------------------------
+Test samples  : 345
+Total matched : 318
+Accuracy      : 0.921739
+
+
+Information gain --> Select one randomly from the top three attributes
+-----------------------------------------------------
+Test samples  : 345
+Total matched : 279
+Accuracy      : 0.808696
+
+
+Gini impurity --> Always select the best attribute
+-----------------------------------------------------
+Test samples  : 345
+Total matched : 316
+Accuracy      : 0.915942
+
+
+Gini impurity --> Select one randomly from the top three attributes
+-----------------------------------------------------
+Test samples  : 345
+Total matched : 276
+Accuracy      : 0.8
+
+
+--------------------------------------------------------------------------------------------------
+----------------------------------------Test 5----------------------------------------------------
+--------------------------------------------------------------------------------------------------
+
+class	total	train	 test	%train
+unacc	 1210	  990	  220	0.818182
+  acc	  384	  305	   79	0.794271
+ good	   69	   60	    9	0.869565
+vgood	   65	   53	   12	0.815385
+
+
+Information gain --> Always select the best attribute
+-----------------------------------------------------
+Test samples  : 320
+Total matched : 298
+Accuracy      : 0.93125
+
+
+Information gain --> Select one randomly from the top three attributes
+-----------------------------------------------------
+Test samples  : 320
+Total matched : 247
+Accuracy      : 0.771875
+
+
+Gini impurity --> Always select the best attribute
+-----------------------------------------------------
+Test samples  : 320
+Total matched : 293
+Accuracy      : 0.915625
+
+
+Gini impurity --> Select one randomly from the top three attributes
+-----------------------------------------------------
+Test samples  : 320
+Total matched : 257
+Accuracy      : 0.803125
+
+
+--------------------------------------------------------------------------------------------------
+----------------------------------------Test 6----------------------------------------------------
+--------------------------------------------------------------------------------------------------
+
+class	total	train	 test	%train
+unacc	 1210	  962	  248	0.795041
+  acc	  384	  315	   69	0.820312
+ good	   69	   52	   17	0.753623
+vgood	   65	   51	   14	0.784615
+
+
+Information gain --> Always select the best attribute
+-----------------------------------------------------
+Test samples  : 348
+Total matched : 318
+Accuracy      : 0.913793
+
+
+Information gain --> Select one randomly from the top three attributes
+-----------------------------------------------------
+Test samples  : 348
+Total matched : 287
+Accuracy      : 0.824713
+
+
+Gini impurity --> Always select the best attribute
+-----------------------------------------------------
+Test samples  : 348
+Total matched : 318
+Accuracy      : 0.913793
+
+
+Gini impurity --> Select one randomly from the top three attributes
+-----------------------------------------------------
+Test samples  : 348
+Total matched : 302
+Accuracy      : 0.867816
+
+
+--------------------------------------------------------------------------------------------------
+----------------------------------------Test 7----------------------------------------------------
+--------------------------------------------------------------------------------------------------
+
+class	total	train	 test	%train
+unacc	 1210	  966	  244	0.798347
+  acc	  384	  300	   84	0.78125
+ good	   69	   55	   14	0.797101
+vgood	   65	   46	   19	0.707692
+
+
+Information gain --> Always select the best attribute
+-----------------------------------------------------
+Test samples  : 361
+Total matched : 333
+Accuracy      : 0.922438
+
+
+Information gain --> Select one randomly from the top three attributes
+-----------------------------------------------------
+Test samples  : 361
+Total matched : 278
+Accuracy      : 0.770083
+
+
+Gini impurity --> Always select the best attribute
+-----------------------------------------------------
+Test samples  : 361
+Total matched : 332
+Accuracy      : 0.919668
+
+
+Gini impurity --> Select one randomly from the top three attributes
+-----------------------------------------------------
+Test samples  : 361
+Total matched : 285
+Accuracy      : 0.789474
+
+
+--------------------------------------------------------------------------------------------------
+----------------------------------------Test 8----------------------------------------------------
+--------------------------------------------------------------------------------------------------
+
+class	total	train	 test	%train
+unacc	 1210	  979	  231	0.809091
+  acc	  384	  306	   78	0.796875
+ good	   69	   55	   14	0.797101
+vgood	   65	   50	   15	0.769231
+
+
+Information gain --> Always select the best attribute
+-----------------------------------------------------
+Test samples  : 338
+Total matched : 306
+Accuracy      : 0.905325
+
+
+Information gain --> Select one randomly from the top three attributes
+-----------------------------------------------------
+Test samples  : 338
+Total matched : 255
+Accuracy      : 0.754438
+
+
+Gini impurity --> Always select the best attribute
+-----------------------------------------------------
+Test samples  : 338
+Total matched : 306
+Accuracy      : 0.905325
+
+
+Gini impurity --> Select one randomly from the top three attributes
+-----------------------------------------------------
+Test samples  : 338
+Total matched : 250
+Accuracy      : 0.739645
+
+
+--------------------------------------------------------------------------------------------------
+----------------------------------------Test 9----------------------------------------------------
+--------------------------------------------------------------------------------------------------
+
+class	total	train	 test	%train
+unacc	 1210	  943	  267	0.779339
+  acc	  384	  306	   78	0.796875
+ good	   69	   53	   16	0.768116
+vgood	   65	   55	   10	0.846154
+
+
+Information gain --> Always select the best attribute
+-----------------------------------------------------
+Test samples  : 371
+Total matched : 340
+Accuracy      : 0.916442
+
+
+Information gain --> Select one randomly from the top three attributes
+-----------------------------------------------------
+Test samples  : 371
+Total matched : 295
+Accuracy      : 0.795148
+
+
+Gini impurity --> Always select the best attribute
+-----------------------------------------------------
+Test samples  : 371
+Total matched : 342
+Accuracy      : 0.921833
+
+
+Gini impurity --> Select one randomly from the top three attributes
+-----------------------------------------------------
+Test samples  : 371
+Total matched : 293
+Accuracy      : 0.789757
+
+
+--------------------------------------------------------------------------------------------------
+----------------------------------------Test 10----------------------------------------------------
+--------------------------------------------------------------------------------------------------
+
+class	total	train	 test	%train
+unacc	 1210	  975	  235	0.805785
+  acc	  384	  298	   86	0.776042
+ good	   69	   57	   12	0.826087
+vgood	   65	   50	   15	0.769231
+
+
+Information gain --> Always select the best attribute
+-----------------------------------------------------
+Test samples  : 348
+Total matched : 322
+Accuracy      : 0.925287
+
+
+Information gain --> Select one randomly from the top three attributes
+-----------------------------------------------------
+Test samples  : 348
+Total matched : 280
+Accuracy      : 0.804598
+
+
+Gini impurity --> Always select the best attribute
+-----------------------------------------------------
+Test samples  : 348
+Total matched : 322
+Accuracy      : 0.925287
+
+
+Gini impurity --> Select one randomly from the top three attributes
+-----------------------------------------------------
+Test samples  : 348
+Total matched : 279
+Accuracy      : 0.801724
+
+
+--------------------------------------------------------------------------------------------------
+----------------------------------------Test 11----------------------------------------------------
+--------------------------------------------------------------------------------------------------
+
+class	total	train	 test	%train
+unacc	 1210	  963	  247	0.795868
+  acc	  384	  303	   81	0.789062
+ good	   69	   54	   15	0.782609
+vgood	   65	   54	   11	0.830769
+
+
+Information gain --> Always select the best attribute
+-----------------------------------------------------
+Test samples  : 354
+Total matched : 325
+Accuracy      : 0.918079
+
+
+Information gain --> Select one randomly from the top three attributes
+-----------------------------------------------------
+Test samples  : 354
+Total matched : 281
+Accuracy      : 0.793785
+
+
+Gini impurity --> Always select the best attribute
+-----------------------------------------------------
+Test samples  : 354
+Total matched : 322
+Accuracy      : 0.909605
+
+
+Gini impurity --> Select one randomly from the top three attributes
+-----------------------------------------------------
+Test samples  : 354
+Total matched : 290
+Accuracy      : 0.819209
+
+
+--------------------------------------------------------------------------------------------------
+----------------------------------------Test 12----------------------------------------------------
+--------------------------------------------------------------------------------------------------
+
+class	total	train	 test	%train
+unacc	 1210	  982	  228	0.81157
+  acc	  384	  309	   75	0.804688
+ good	   69	   50	   19	0.724638
+vgood	   65	   56	    9	0.861538
+
+
+Information gain --> Always select the best attribute
+-----------------------------------------------------
+Test samples  : 331
+Total matched : 304
+Accuracy      : 0.918429
+
+
+Information gain --> Select one randomly from the top three attributes
+-----------------------------------------------------
+Test samples  : 331
+Total matched : 270
+Accuracy      : 0.81571
+
+
+Gini impurity --> Always select the best attribute
+-----------------------------------------------------
+Test samples  : 331
+Total matched : 302
+Accuracy      : 0.912387
+
+
+Gini impurity --> Select one randomly from the top three attributes
+-----------------------------------------------------
+Test samples  : 331
+Total matched : 268
+Accuracy      : 0.809668
+
+
+--------------------------------------------------------------------------------------------------
+----------------------------------------Test 13----------------------------------------------------
+--------------------------------------------------------------------------------------------------
+
+class	total	train	 test	%train
+unacc	 1210	  963	  247	0.795868
+  acc	  384	  311	   73	0.809896
+ good	   69	   55	   14	0.797101
+vgood	   65	   60	    5	0.923077
+
+
+Information gain --> Always select the best attribute
+-----------------------------------------------------
+Test samples  : 339
+Total matched : 313
+Accuracy      : 0.923304
+
+
+Information gain --> Select one randomly from the top three attributes
+-----------------------------------------------------
+Test samples  : 339
+Total matched : 276
+Accuracy      : 0.814159
+
+
+Gini impurity --> Always select the best attribute
+-----------------------------------------------------
+Test samples  : 339
+Total matched : 308
+Accuracy      : 0.908555
+
+
+Gini impurity --> Select one randomly from the top three attributes
+-----------------------------------------------------
+Test samples  : 339
+Total matched : 277
+Accuracy      : 0.817109
+
+
+--------------------------------------------------------------------------------------------------
+----------------------------------------Test 14----------------------------------------------------
+--------------------------------------------------------------------------------------------------
+
+class	total	train	 test	%train
+unacc	 1210	  978	  232	0.808264
+  acc	  384	  327	   57	0.851562
+ good	   69	   54	   15	0.782609
+vgood	   65	   55	   10	0.846154
+
+
+Information gain --> Always select the best attribute
+-----------------------------------------------------
+Test samples  : 314
+Total matched : 295
+Accuracy      : 0.93949
+
+
+Information gain --> Select one randomly from the top three attributes
+-----------------------------------------------------
+Test samples  : 314
+Total matched : 249
+Accuracy      : 0.792994
+
+
+Gini impurity --> Always select the best attribute
+-----------------------------------------------------
+Test samples  : 314
+Total matched : 293
+Accuracy      : 0.933121
+
+
+Gini impurity --> Select one randomly from the top three attributes
+-----------------------------------------------------
+Test samples  : 314
+Total matched : 254
+Accuracy      : 0.808917
+
+
+--------------------------------------------------------------------------------------------------
+----------------------------------------Test 15----------------------------------------------------
+--------------------------------------------------------------------------------------------------
+
+class	total	train	 test	%train
+unacc	 1210	  948	  262	0.783471
+  acc	  384	  292	   92	0.760417
+ good	   69	   56	   13	0.811594
+vgood	   65	   57	    8	0.876923
+
+
+Information gain --> Always select the best attribute
+-----------------------------------------------------
+Test samples  : 375
+Total matched : 348
+Accuracy      : 0.928
+
+
+Information gain --> Select one randomly from the top three attributes
+-----------------------------------------------------
+Test samples  : 375
+Total matched : 296
+Accuracy      : 0.789333
+
+
+Gini impurity --> Always select the best attribute
+-----------------------------------------------------
+Test samples  : 375
+Total matched : 344
+Accuracy      : 0.917333
+
+
+Gini impurity --> Select one randomly from the top three attributes
+-----------------------------------------------------
+Test samples  : 375
+Total matched : 314
+Accuracy      : 0.837333
+
+
+--------------------------------------------------------------------------------------------------
+----------------------------------------Test 16----------------------------------------------------
+--------------------------------------------------------------------------------------------------
+
+class	total	train	 test	%train
+unacc	 1210	  974	  236	0.804959
+  acc	  384	  308	   76	0.802083
+ good	   69	   58	   11	0.84058
+vgood	   65	   53	   12	0.815385
+
+
+Information gain --> Always select the best attribute
+-----------------------------------------------------
+Test samples  : 335
+Total matched : 309
+Accuracy      : 0.922388
+
+
+Information gain --> Select one randomly from the top three attributes
+-----------------------------------------------------
+Test samples  : 335
+Total matched : 273
+Accuracy      : 0.814925
+
+
+Gini impurity --> Always select the best attribute
+-----------------------------------------------------
+Test samples  : 335
+Total matched : 309
+Accuracy      : 0.922388
+
+
+Gini impurity --> Select one randomly from the top three attributes
+-----------------------------------------------------
+Test samples  : 335
+Total matched : 257
+Accuracy      : 0.767164
+
+
+--------------------------------------------------------------------------------------------------
+----------------------------------------Test 17----------------------------------------------------
+--------------------------------------------------------------------------------------------------
+
+class	total	train	 test	%train
+unacc	 1210	  977	  233	0.807438
+  acc	  384	  303	   81	0.789062
+ good	   69	   50	   19	0.724638
+vgood	   65	   51	   14	0.784615
+
+
+Information gain --> Always select the best attribute
+-----------------------------------------------------
+Test samples  : 347
+Total matched : 318
+Accuracy      : 0.916427
+
+
+Information gain --> Select one randomly from the top three attributes
+-----------------------------------------------------
+Test samples  : 347
+Total matched : 274
+Accuracy      : 0.789625
+
+
+Gini impurity --> Always select the best attribute
+-----------------------------------------------------
+Test samples  : 347
+Total matched : 317
+Accuracy      : 0.913545
+
+
+Gini impurity --> Select one randomly from the top three attributes
+-----------------------------------------------------
+Test samples  : 347
+Total matched : 267
+Accuracy      : 0.769452
+
+
+--------------------------------------------------------------------------------------------------
+----------------------------------------Test 18----------------------------------------------------
+--------------------------------------------------------------------------------------------------
+
+class	total	train	 test	%train
+unacc	 1210	  981	  229	0.810744
+  acc	  384	  307	   77	0.799479
+ good	   69	   51	   18	0.73913
+vgood	   65	   53	   12	0.815385
+
+
+Information gain --> Always select the best attribute
+-----------------------------------------------------
+Test samples  : 336
+Total matched : 314
+Accuracy      : 0.934524
+
+
+Information gain --> Select one randomly from the top three attributes
+-----------------------------------------------------
+Test samples  : 336
+Total matched : 260
+Accuracy      : 0.77381
+
+
+Gini impurity --> Always select the best attribute
+-----------------------------------------------------
+Test samples  : 336
+Total matched : 314
+Accuracy      : 0.934524
+
+
+Gini impurity --> Select one randomly from the top three attributes
+-----------------------------------------------------
+Test samples  : 336
+Total matched : 272
+Accuracy      : 0.809524
+
+
+--------------------------------------------------------------------------------------------------
+----------------------------------------Test 19----------------------------------------------------
+--------------------------------------------------------------------------------------------------
+
+class	total	train	 test	%train
+unacc	 1210	  970	  240	0.801653
+  acc	  384	  319	   65	0.830729
+ good	   69	   47	   22	0.681159
+vgood	   65	   54	   11	0.830769
+
+
+Information gain --> Always select the best attribute
+-----------------------------------------------------
+Test samples  : 338
+Total matched : 315
+Accuracy      : 0.931953
+
+
+Information gain --> Select one randomly from the top three attributes
+-----------------------------------------------------
+Test samples  : 338
+Total matched : 259
+Accuracy      : 0.766272
+
+
+Gini impurity --> Always select the best attribute
+-----------------------------------------------------
+Test samples  : 338
+Total matched : 319
+Accuracy      : 0.943787
+
+
+Gini impurity --> Select one randomly from the top three attributes
+-----------------------------------------------------
+Test samples  : 338
+Total matched : 271
+Accuracy      : 0.801775
+
+
